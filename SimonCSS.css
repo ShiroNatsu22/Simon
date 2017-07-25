@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  background: #E5AA66;
+  width:1280px;
+  height:720px;
+}
+div {
+  width: 40%;
+  height: 70%;
+  float: left;
+  border: solid 10px black;
+
+}
+/*Aqui van es estils del que seran els botons, es a dir, verd,groc,vermell,blau */
+#board{
+  width:70%;
+  height:70%;
+  border: none;
+  float:left;
+}
+#green {
+  background: #1CD00D;
+  border-radius: 100% 0 0 0;
+  margin-left: 4%;
+
+}
+#yellow {
+  background: #E8C400;
+  border-radius: 0 100% 0 0;
+
+}
+#red {
+  background: #FF0000;
+  border-radius: 0 0 0 100%;
+  clear: left;
+  margin-left: 4%;
+}
+#blue {
+  background: #0C41E8;
+  border-radius: 0 0 100% 0;
+}
+
+/* Aqui se li dona l'estil al boto JUGAR*/
+#buttonStart {
+  position: absolute;
+  left: 21%;
+  top: 32%;
+  width: 20%;
+  height: 35%;
+  border-radius: 100%;
+  background: #661DFF;
+  border: solid 5px black;
+  font-family: font1;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #E55EA5;
+  outline: none;
+  z-index:0;
+}
+/* Se li dona estil al P que ens dira quants de punts duim*/
+#punts {
+  font-family: font2;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 1%;
+}
+/*Estil als missatges es a dir quan li toca al Simon, al jugador,etc*/
+#missatges {
+  margin-top: 47%;
+  margin-left: 50%;
+  font-family: font2;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+/*Tots els estils que se  li dona al ranking*/
+#divTable{
+  width: 30%;
+  height:60%;
+  left: 80%;
+  top:20%;
+  left:60%;
+  border:none;
+  position:absolute;
+}
+#capsalera{
+  padding-left: 10%;
+  font-size:40px;
+  text-shadow: 10px 10px 4px #E58B10;
+  }
+
+#table{
+  padding-left: 20%;
+  padding-top: 10%;
+  text-align: right;
+  font-family: font2;
+
+}
+
+/*Estils que se li dona al formulari*/
+#form{
+  position: absolute;
+  left: 20%;
+  top: 32%;
+  width: 22%;
+  height: 35%;
+  border-radius: 20%;
+  background: #FF00A0;
+  border: solid 10px black;
+  font-family: font1;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #E55EA5;
+  outline: none;
+  z-index:-1;
+}
+
+#input{
+position: relative;
+font-family: font2;
+font-size: 35px;
+width:80%;
+height: 20%;
+float: left;
+margin-top: 29%;
+margin-left:11%;
+background: #79FF00;
+
+}
+#submit{
+  position: absolute;
+  top:52%;
+  right:42%;
+  border-radius: 0% 0% 50% 50% ;
+  width:20%;
+  height:14%;
+  font-size: 10px;
+  background: linear-gradient(red, yellow);
+  border-top: solid 1px white;
+  font-family: font2;
+  outline: none;
+}
+
+/*Aqui van les diferents fonts que s'empren al SIMON*/
+@font-face {
+  font-family: font1;
+  src: url(fonts/GloriaHallelujah.ttf);
+  font-family: font2;
+  src: url(fonts/Shrikhand-Regular.ttf);
+
+
+}
